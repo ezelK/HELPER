@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Register">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/startImg"
+        android:layout_width="match_parent"
+        android:layout_height="159dp"
+        android:src="@mipmap/helper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/txtRegisterSsn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ssn"
+            android:inputType="number"
+            app:floatingLabel="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="130dp" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/txtRegisterName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="name"
+            android:inputType="textPersonName"
+            app:floatingLabel="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtRegisterSsn"
+            tools:ignore="MissingConstraints" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/txtRegisterSurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="surname"
+            android:inputType="textPersonName"
+            app:floatingLabel="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtRegisterName"
+            tools:ignore="MissingConstraints" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/txtRegisterPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Phone Number"
+            android:inputType="number"
+            app:floatingLabel="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtRegisterEmail"
+            tools:ignore="MissingConstraints" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/txtRegisterEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="email"
+            android:inputType="textEmailAddress"
+            app:floatingLabel="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtRegisterSurname"
+            tools:ignore="MissingConstraints" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/txtRegisterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="password"
+            android:inputType="textPassword"
+            app:floatingLabel="normal"
+            app:layout_constraintTop_toBottomOf="@+id/txtRegisterPhone"
+            tools:ignore="MissingConstraints,UnknownId" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/txtRegisterConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="password"
+            android:inputType="textPassword"
+            app:floatingLabel="normal"
+            app:layout_constraintTop_toBottomOf="@+id/txtRegisterPassword"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRegisterSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/LinearLayout"
+        android:layout_marginTop="40dp"
+        android:text="SIGN UP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayout"
+        tools:ignore="MissingConstraints" />
+
+
+</RelativeLayout>

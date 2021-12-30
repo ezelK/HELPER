@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">HELPER</string>
+
+    <string name="action_settings"></string>
+    <string-array name="Gender">GENDER</string-array>
+
+    <string-array name="gender">
+        <item>MALE</item>
+        <item>FEMALE</item>
+        <item>OTHER</item>
+    </string-array>
+    <string-array name="City">CITY</string-array>
+    <string-array name="city">
+        <item>Muğla</item>
+    </string-array>
+
+    <string-array name="District">DISTRICT</string-array>
+    <string-array name="district">
+        <item>Menteşe</item>
+        <item>Bodrum</item>
+        <item>Dalaman</item>
+        <item>Datça</item>
+        <item>Fethiye</item>
+        <item>Kavaklıdere</item>
+        <item>Köyceğiz</item>
+        <item>Marmaris</item>
+        <item>Milas</item>
+        <item>Ortaca</item>
+        <item>Seydikemer</item>
+        <item>Ula</item>
+        <item>Yatağan</item>
+    </string-array>
+
+    <string-array name="Budget">BUDGET</string-array>
+    <string-array name="budget">
+        <item>100 TL</item>
+        <item>200 TL</item>
+        <item>300 TL</item>
+        <item>400 TL</item>
+        <item>500 TL</item>
+        <item>600 TL</item>
+        <item>700 TL</item>
+        <item>800 TL</item>
+        <item>900 TL</item>
+        <item>1000 TL</item>
+        <item>+1000 TL</item>
+
+    </string-array>
+
+    <string-array name="Service">SERVICE</string-array>
+    <string-array name="service">
+        <item>Cleaner</item>
+        <item>Musician</item>
+        <item>Doctor</item>
+        <item>Veterinarian</item>
+        <item>Chef</item>
+        <item>Hairdresser</item>
+        <item>Teacher</item>
+        <item>Mechanic</item>
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

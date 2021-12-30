@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NeedersLists">
+
+    <TextView
+        android:id="@+id/txtHelperMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HELPERS"
+        android:textSize="34sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginTop="28dp"
+        android:text="Name: Zehra"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/txtHelperMenu" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Surname: Ayyıldız"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age: 21"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="103dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtHelperMenu"
+        app:srcCompat="@mipmap/pp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonOffer"
+        android:layout_width="89dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="28dp"
+        android:text="OFFER"
+        app:layout_constraintBottom_toBottomOf="@+id/txtExplanation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txtExplanation"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/txtDistrict"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="District: Bodrum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtExplanation"
+        app:layout_constraintTop_toBottomOf="@+id/txtHelperMenu" />
+
+    <TextView
+        android:id="@+id/txtExplanation"
+        android:layout_width="139dp"
+        android:layout_height="69dp"
+        android:text="Explanation: I have cook certificate. If you want Asian foods, I can help you."
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Payment: 1050TL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtExplanation"
+        app:layout_constraintTop_toBottomOf="@+id/txtDistrict" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="103dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:srcCompat="@mipmap/pp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: Alperen"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toTopOf="@+id/imageButton2" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Surname: Rıdvanoğulları"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age: 22"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="151dp"
+        android:layout_height="82dp"
+        android:text="Explanation: I worked some hotels as a chef, you can see in my cv. I am good at snacks and desserts."
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="89dp"
+        android:layout_height="38dp"
+        android:text="OFFER"
+        app:layout_constraintBottom_toBottomOf="@+id/textView25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="District: Köyceğiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toTopOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment: 300TL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
