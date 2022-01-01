@@ -1,18 +1,14 @@
 package com.example.helper;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
-import android.widget.Toolbar;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -23,12 +19,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.rengwuxian.materialedittext.MaterialEditText;
 
-import java.sql.SQLOutput;
 import java.util.HashMap;
 
 public class Register extends AppCompatActivity {
-    Button btnRegisterSignUp;
-    Button btnSignInRegister;
+    Button btnSignUp;
     MaterialEditText editName, editSurname, editEmail, editPassword, editConfirmPassword, editSsn, editPhone;
     FirebaseAuth mAuth;
     DatabaseReference reference;
@@ -53,8 +47,8 @@ public class Register extends AppCompatActivity {
         editPhone =findViewById(R.id.txtRegisterPhone);
 
         mAuth = FirebaseAuth.getInstance();
-        btnRegisterSignUp = (Button) findViewById(R.id.btnRegisterSignUp);
-        btnRegisterSignUp.setOnClickListener(new View.OnClickListener() {
+        btnSignUp = (Button) findViewById(R.id.btnSignUp);
+        btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String txtName = editName.getText().toString();
