@@ -2,10 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.helper">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
+        android:usesCleartextTraffic="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -13,6 +12,9 @@
         android:theme="@style/Theme.HELPER">
         <activity
             android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Register"
             android:exported="true" />
         <activity
             android:name=".NavBar"
@@ -31,9 +33,6 @@
             android:exported="true" />
         <activity
             android:name=".NeedersLists"
-            android:exported="true" />
-        <activity
-            android:name=".Register"
             android:exported="true" />
         <activity
             android:name=".HelperOrNeeder"

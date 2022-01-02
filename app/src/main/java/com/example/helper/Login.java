@@ -33,8 +33,8 @@ public class Login extends AppCompatActivity {
         getActionBar().setTitle("Login");
         getActionBar().setDisplayShowHomeEnabled(true);*/
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
+        /*ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);*/
 
         mAuth =FirebaseAuth.getInstance();
 
@@ -67,17 +67,5 @@ public class Login extends AppCompatActivity {
                 }
             }
         });
-    }
-
-    // this event will enable the back
-    // function to the button on press
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                this.finish();
-                return true;
-        }
-        return super.onOptionsItemSelected(item);
     }
 }
