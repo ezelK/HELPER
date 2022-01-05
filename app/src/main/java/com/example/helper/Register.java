@@ -47,7 +47,6 @@ public class Register extends AppCompatActivity {
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String msg= "bbbbbb";
                 String txtNameSurname = editNameSurname.getText().toString();
                 String txtEmail = editEmail.getText().toString().trim();
                 String txtPassword = editPassword.getText().toString().trim();
@@ -62,22 +61,17 @@ public class Register extends AppCompatActivity {
                 }else if(txtPassword.length() < 8){
                     Toast.makeText(Register.this, "Password must be at least 8 characters!", Toast.LENGTH_SHORT).show();
                 }else{
-                    Log.d(msg, "aaaaaaaaaa");
                     register(txtNameSurname,  txtEmail, txtPassword, txtPhone, txtSsn);
                 }
             }
         });
     }
     private void register(String nameSurname, String email, String password, String phone, String ssn){
-        String msg= " bbbbb";
-        Log.d(msg, "ddddddd");
         mAuth.createUserWithEmailAndPassword(email,password)
                 .addOnCompleteListener(Register.this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
-                            String msg= "abcd";
-                            Log.d(msg, "delimine");
                             FirebaseUser firebaseUser = mAuth.getCurrentUser();
                             assert firebaseUser != null;
                             String userId = firebaseUser.getUid();
