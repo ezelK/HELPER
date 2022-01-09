@@ -22,7 +22,7 @@ import com.rengwuxian.materialedittext.MaterialEditText;
 
 import java.util.HashMap;
 
-public class Register extends AppCompatActivity {
+public class Register<DatabaseReferencereference> extends AppCompatActivity {
 
     MaterialEditText editNameSurname, editEmail, editPassword, editConfirmPassword, editSsn, editPhone;
     Button btnRegister;
@@ -69,8 +69,7 @@ public class Register extends AppCompatActivity {
         });
     }
     private void register(String nameSurname, String email, String password, String phone, String ssn){
-        String msg= " bbbbb";
-        Log.d(msg, "ddddddd");
+
         mAuth.createUserWithEmailAndPassword(email,password)
                 .addOnCompleteListener(Register.this, new OnCompleteListener<AuthResult>() {
                     @Override
@@ -104,7 +103,6 @@ public class Register extends AppCompatActivity {
                                 }
                             });
                         } else{
-                            task.getException().printStackTrace();
                             Toast.makeText(Register.this, "You can't register with this email or password. Try again!", Toast.LENGTH_SHORT).show();
                         }
                     }

@@ -17,7 +17,7 @@ import com.example.helper.placeholder.PlaceholderContent;
 /**
  * A fragment representing a list of Items.
  */
-public class ProposalFragment extends Fragment {
+public class ProposalsFragment extends Fragment {
 
     // TODO: Customize parameter argument names
     private static final String ARG_COLUMN_COUNT = "column-count";
@@ -28,13 +28,13 @@ public class ProposalFragment extends Fragment {
      * Mandatory empty constructor for the fragment manager to instantiate the
      * fragment (e.g. upon screen orientation changes).
      */
-    public ProposalFragment() {
+    public ProposalsFragment() {
     }
 
     // TODO: Customize parameter initialization
     @SuppressWarnings("unused")
-    public static ProposalFragment newInstance(int columnCount) {
-        ProposalFragment fragment = new ProposalFragment();
+    public static ProposalsFragment newInstance(int columnCount) {
+        ProposalsFragment fragment = new ProposalsFragment();
         Bundle args = new Bundle();
         args.putInt(ARG_COLUMN_COUNT, columnCount);
         fragment.setArguments(args);

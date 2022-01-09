@@ -4,7 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NavBar">
+    tools:context=".Home">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/top_bar"></include>
 
     <FrameLayout
         android:id="@+id/container"
@@ -17,6 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="?android:windowBackground"
-        app:menu="@menu/menu" />
+        app:itemIconTint="@color/selector"
+        app:menu="@menu/home_menu" />
 
 </RelativeLayout>
