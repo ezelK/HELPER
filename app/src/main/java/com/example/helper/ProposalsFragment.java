@@ -64,7 +64,7 @@ public class ProposalsFragment extends Fragment {
             } else {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
             }
-            recyclerView.setAdapter(new MyproposalRecyclerViewAdapter(PlaceholderContent.ITEMS));
+            recyclerView.setAdapter(new MyProposalRecyclerViewAdapter(PlaceholderContent.ITEMS));
         }
         return view;
     }

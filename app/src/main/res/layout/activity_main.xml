@@ -26,7 +26,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/startImg" />
+        app:layout_constraintTop_toBottomOf="@+id/startImg"
+        android:background="@drawable/buttonbg"
+        android:textColor="#6C79BF"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"/>
 
     <Button
         android:id="@+id/register"
@@ -39,6 +43,11 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Login"
-        app:layout_constraintVertical_bias="0.01" />
+        app:layout_constraintVertical_bias="0.01"
+        android:background="@drawable/buttonbg"
+        android:textColor="#6C79BF"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

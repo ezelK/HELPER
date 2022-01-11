@@ -128,8 +128,8 @@
                 android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_local_phone_24"
-                tools:src="@drawable/ic_baseline_local_phone_24" />
+                android:src="@drawable/ic_baseline_phone_24"
+                tools:src="@drawable/ic_baseline_phone_24" />
 
             <TextView
                 android:id="@+id/txtProfilePhone"
@@ -173,8 +173,8 @@
                 android:id="@+id/imageView3"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:src="@drawable/ic_baseline_email_24"
-                tools:src="@drawable/ic_baseline_email_24" />
+                android:src="@drawable/ic_baseline_mail_24"
+                tools:src="@drawable/ic_baseline_mail_24" />
 
             <TextView
                 android:id="@+id/txtProfileMail"

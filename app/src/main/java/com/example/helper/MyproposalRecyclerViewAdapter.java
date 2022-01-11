@@ -16,11 +16,11 @@ import java.util.List;
  * {@link RecyclerView.Adapter} that can display a {@link PlaceholderItem}.
  * TODO: Replace the implementation with code for your data type.
  */
-public class MyproposalRecyclerViewAdapter extends RecyclerView.Adapter<MyproposalRecyclerViewAdapter.ViewHolder> {
+class MyProposalRecyclerViewAdapter extends RecyclerView.Adapter<MyProposalRecyclerViewAdapter.ViewHolder> {
 
     private final List<PlaceholderItem> mValues;
 
-    public MyproposalRecyclerViewAdapter(List<PlaceholderItem> items) {
+    public MyProposalRecyclerViewAdapter(List<PlaceholderItem> items) {
         mValues = items;
     }
 

@@ -1,17 +1,14 @@
 package com.example.helper;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-import android.widget.Toolbar;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -19,23 +16,15 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.rengwuxian.materialedittext.MaterialEditText;
 
+//Ezel Karadirek
 public class Login extends AppCompatActivity {
     MaterialEditText email,password;
     Button btnLogin;
     FirebaseAuth mAuth;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
-        /*Toolbar toolbar= findViewById(R.id.toolbar);
-        setActionBar(toolbar);
-        getActionBar().setTitle("Login");
-        getActionBar().setDisplayShowHomeEnabled(true);*/
-
-        /*ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);*/
-
         mAuth =FirebaseAuth.getInstance();
 
 
@@ -69,3 +58,4 @@ public class Login extends AppCompatActivity {
         });
     }
 }
+

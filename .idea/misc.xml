@@ -35,12 +35,30 @@
         <entry key="..\:/Users/DELL/AndroidStudioProjects/HELPER/app/src/main/res/layout/register.xml" value="0.1" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/HELPER/app/src/main/res/menu/menu.xml" value="0.5" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/HELPER/app/src/main/res/mipmap-anydpi-v26/pp.xml" value="0.1" />
+        <entry key="..\:/Users/DELL/Desktop/Android Studio Projects/HELPER/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/DELL/Desktop/Android Studio Projects/HELPER/app/src/main/res/drawable/buttonbg.xml" value="0.1" />
+        <entry key="..\:/Users/DELL/Desktop/Android Studio Projects/HELPER/app/src/main/res/drawable/helper_background.xml" value="0.1" />
+        <entry key="..\:/Users/DELL/Desktop/Android Studio Projects/HELPER/app/src/main/res/drawable/ic_baseline_close.xml" value="0.1" />
+        <entry key="..\:/Users/DELL/Desktop/Android Studio Projects/HELPER/app/src/main/res/drawable/ic_baseline_people.xml" value="0.1" />
+        <entry key="..\:/Users/DELL/Desktop/Android Studio Projects/HELPER/app/src/main/res/drawable/ic_baseline_phone_24.xml" value="0.1" />
+        <entry key="..\:/Users/DELL/Desktop/Android Studio Projects/HELPER/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.1" />
+        <entry key="..\:/Users/DELL/Desktop/Android Studio Projects/HELPER/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/DELL/Desktop/Android Studio Projects/HELPER/app/src/main/res/drawable/offers.xml" value="0.1" />
+        <entry key="..\:/Users/DELL/Desktop/Android Studio Projects/HELPER/app/src/main/res/drawable/pp_background.xml" value="0.1" />
         <entry key="..\:/Users/DELL/Desktop/Android Studio Projects/HELPER/app/src/main/res/drawable/profile.xml" value="0.1" />
+        <entry key="..\:/Users/DELL/Desktop/Android Studio Projects/HELPER/app/src/main/res/drawable/proposal.xml" value="0.1" />
+        <entry key="..\:/Users/DELL/Desktop/Android Studio Projects/HELPER/app/src/main/res/drawable/search.xml" value="0.1" />
         <entry key="..\:/Users/DELL/Desktop/Android Studio Projects/HELPER/app/src/main/res/drawable/top_bar.xml" value="0.1" />
         <entry key="..\:/Users/DELL/Desktop/Android Studio Projects/HELPER/app/src/main/res/layout/activity_edit_profile.xml" value="0.26481481481481484" />
+        <entry key="..\:/Users/DELL/Desktop/Android Studio Projects/HELPER/app/src/main/res/layout/activity_home.xml" value="0.18181818181818182" />
+        <entry key="..\:/Users/DELL/Desktop/Android Studio Projects/HELPER/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/DELL/Desktop/Android Studio Projects/HELPER/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/Users/DELL/Desktop/Android Studio Projects/HELPER/app/src/main/res/layout/fragment_offers_list.xml" value="0.26481481481481484" />
         <entry key="..\:/Users/DELL/Desktop/Android Studio Projects/HELPER/app/src/main/res/layout/fragment_profile.xml" value="0.26481481481481484" />
+        <entry key="..\:/Users/DELL/Desktop/Android Studio Projects/HELPER/app/src/main/res/layout/fragment_proposal.xml" value="0.26481481481481484" />
+        <entry key="..\:/Users/DELL/Desktop/Android Studio Projects/HELPER/app/src/main/res/layout/fragment_proposal_list.xml" value="0.26481481481481484" />
         <entry key="..\:/Users/DELL/Desktop/Android Studio Projects/HELPER/app/src/main/res/layout/fragment_search.xml" value="0.26481481481481484" />
+        <entry key="..\:/Users/DELL/Desktop/Android Studio Projects/HELPER/app/src/main/res/layout/fragment_users.xml" value="0.18181818181818182" />
         <entry key="..\:/Users/DELL/Desktop/Android Studio Projects/HELPER/app/src/main/res/layout/helper_filter.xml" value="0.26481481481481484" />
         <entry key="..\:/Users/DELL/Desktop/Android Studio Projects/HELPER/app/src/main/res/layout/login.xml" value="0.26481481481481484" />
         <entry key="..\:/Users/DELL/Desktop/Android Studio Projects/HELPER/app/src/main/res/layout/navbar.xml" value="0.26481481481481484" />

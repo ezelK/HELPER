@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Login">
 
+
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/startImg"
         android:layout_width="165dp"
@@ -25,7 +26,10 @@
         android:text="LOGIN"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/buttonbg"
+        android:textColor="#6C79BF"
+        android:textStyle="italic"/>
 
     <com.rengwuxian.materialedittext.MaterialEditText
         android:id="@+id/txtLoginEmail"
