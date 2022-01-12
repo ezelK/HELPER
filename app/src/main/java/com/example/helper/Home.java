@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
@@ -35,6 +36,25 @@ public class Home extends AppCompatActivity {
         navView= findViewById(R.id.bottomNav);
         navView.setOnNavigationItemSelectedListener(navViewMethod);
         getSupportFragmentManager().beginTransaction().replace(R.id.container,new Fragment()).commit();
+        Toast toast;
+        Thread thread;
+
+        toast = Toast.makeText(this, "Thanks for joining us!", Toast.LENGTH_SHORT);
+        thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                for (int i=0; i<5; i++){
+                    try {
+                        Thread.sleep(10000);
+                        toast.show();
+                        Thread.sleep(500);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        });
+        thread.start();
 
     }
     private BottomNavigationView.OnNavigationItemSelectedListener navViewMethod= new BottomNavigationView.OnNavigationItemSelectedListener(){
@@ -51,9 +71,6 @@ public class Home extends AppCompatActivity {
                     break;
                 case R.id.proposal:
                     fragment = new ProposalsFragment();
-                    break;
-                case R.id.search:
-                    fragment = new SearchFragment();
                     break;
                 case R.id.users:
                     fragment= new UsersFragment();

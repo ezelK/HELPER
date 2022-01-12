@@ -1,7 +1,9 @@
 package com.example.helper;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -26,6 +28,14 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
         mAuth =FirebaseAuth.getInstance();
+
+        Toolbar toolbar= findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Login");
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
 
         email=findViewById(R.id.txtLoginEmail);

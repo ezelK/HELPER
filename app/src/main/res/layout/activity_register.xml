@@ -5,6 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Register">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/top_bar"></include>
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -16,28 +19,37 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <Spinner
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-            android:id="@+id/registerSpinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
 
         <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/txtRegisterSsn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="ssn"
-            android:inputType="number" />
+            android:hint="Please enter your SSN"
+            android:inputType="number"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/txtRegisterService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Please enter your Service*"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
+
 
         <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/txtRegisterName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="name surname"
+            android:hint="Please enter your Name Surname*"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
 
 
         <com.rengwuxian.materialedittext.MaterialEditText
@@ -45,32 +57,40 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:hint="Phone Number"
-            android:inputType="number" />
+            android:hint="Please enter your Phone Number*"
+            android:inputType="number"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
 
         <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/txtRegisterEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:hint="email"
-            android:inputType="textEmailAddress" />
+            android:hint="Please enter your email*"
+            android:inputType="textEmailAddress"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
 
         <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/txtRegisterPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:hint="password"
-            android:inputType="textPassword" />
+            android:hint="Please enter your Password*"
+            android:inputType="textPassword"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
 
         <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/txtRegisterConfirmPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:hint="password"
-            android:inputType="textPassword" />
+            android:hint="Please enter your Password again *"
+            android:inputType="textPassword"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
 
         <Button
             android:id="@+id/btnRegister"
@@ -80,7 +100,8 @@
             android:text="SIGN UP"
             android:background="@drawable/buttonbg"
             android:textColor="#6C79BF"
-            android:textStyle="italic"/>
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"/>
 
 
     </LinearLayout>

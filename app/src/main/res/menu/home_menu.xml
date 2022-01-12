@@ -12,10 +12,7 @@
         android:id="@+id/proposal"
         android:title="Proposals"
         android:icon="@drawable/proposal" />
-    <item
-        android:id="@+id/search"
-        android:title="Search"
-        android:icon="@drawable/ic_baseline_search_24" />
+
     <item
         android:id="@+id/users"
         android:title="Users"

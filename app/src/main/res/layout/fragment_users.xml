@@ -5,6 +5,14 @@
     android:layout_height="match_parent"
     tools:context=".UsersFragment">
 
+    <EditText
+        android:id="@+id/search_bar_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        android:hint="Search..." />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_users"
         android:layout_width="match_parent"

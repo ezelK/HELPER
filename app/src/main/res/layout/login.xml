@@ -6,6 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".Login">
 
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/top_bar"
+        app:subtitleTextColor="#FFFFFF"
+        app:titleTextColor="#FFFFFF"></include>
+
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/startImg"

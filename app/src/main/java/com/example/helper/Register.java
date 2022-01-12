@@ -1,7 +1,9 @@
 package com.example.helper;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -24,7 +26,7 @@ import java.util.HashMap;
 
 //Ezel Karadirek
 public class Register extends AppCompatActivity {
-    MaterialEditText editNameSurname, editEmail, editPassword, editConfirmPassword, editSsn, editPhone;
+    MaterialEditText editNameSurname, editEmail, editPassword, editConfirmPassword, editSsn, editPhone, editService;
     Button btnRegister;
     FirebaseAuth mAuth;
     DatabaseReference reference;
@@ -33,14 +35,23 @@ public class Register extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+        Toolbar toolbar= findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Register");
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         editNameSurname = findViewById(R.id.txtRegisterName);
         editEmail = findViewById(R.id.txtRegisterEmail);
         editPassword = findViewById(R.id.txtRegisterPassword);
+        editService= findViewById(R.id.txtRegisterService);
         editConfirmPassword = findViewById(R.id.txtRegisterConfirmPassword);
         editSsn = findViewById(R.id.txtRegisterSsn);
         editPhone = findViewById(R.id.txtRegisterPhone);
         btnRegister = findViewById(R.id.btnRegister);
+
 
         mAuth= FirebaseAuth.getInstance();
         btnRegister.setOnClickListener(new View.OnClickListener() {
@@ -50,21 +61,22 @@ public class Register extends AppCompatActivity {
                 String txtEmail = editEmail.getText().toString().trim();
                 String txtPassword = editPassword.getText().toString().trim();
                 String txtSsn = editSsn.getText().toString();
+                String txtService = editService.getText().toString();
                 String txtPhone = editPhone.getText().toString();
                 String txtConfirmPassword = editConfirmPassword.getText().toString().trim();
 
                 //These checks necessary places are full or empty, password length and 2 passwords are same
-                if (TextUtils.isEmpty(txtNameSurname) || TextUtils.isEmpty(txtEmail) || TextUtils.isEmpty(txtPassword) || TextUtils.isEmpty(txtPhone) || TextUtils.isEmpty(txtConfirmPassword)){
+                if (TextUtils.isEmpty(txtNameSurname) || TextUtils.isEmpty(txtService) || TextUtils.isEmpty(txtEmail) || TextUtils.isEmpty(txtPassword) || TextUtils.isEmpty(txtPhone) || TextUtils.isEmpty(txtConfirmPassword)){
                     Toast.makeText(Register.this, "All fields must be filled!", Toast.LENGTH_SHORT).show();
                 }else if(txtPassword.length() < 8){
                     Toast.makeText(Register.this, "Password must be at least 8 characters!", Toast.LENGTH_SHORT).show();
                 }else{
-                    register(txtNameSurname,  txtEmail, txtPassword, txtPhone, txtSsn);
+                    register(txtNameSurname,  txtEmail, txtPassword, txtPhone, txtSsn, txtService);
                 }
             }
         });
     }
-    private void register(String nameSurname, String email, String password, String phone, String ssn){
+    private void register(String nameSurname, String email, String password, String phone, String ssn,String service){
         mAuth.createUserWithEmailAndPassword(email,password)
                 .addOnCompleteListener(Register.this, new OnCompleteListener<AuthResult>() {
                     @Override
@@ -81,6 +93,7 @@ public class Register extends AppCompatActivity {
                             hashMap.put("Mail", email);
                             hashMap.put("Password", password);
                             hashMap.put("Ssn", ssn);
+                            hashMap.put("Service", service );
                             hashMap.put("Phone", phone);
                             hashMap.put("imageurl", "gs://helperdeneme.appspot.com/1.jpeg");
 

@@ -15,6 +15,9 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+    sourceSets{
+        androidTest.assets.srcDirs += files("$projectDir/schemas".toString())
+    }
 
     buildTypes {
         release {

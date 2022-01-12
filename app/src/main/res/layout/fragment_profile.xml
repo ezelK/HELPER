@@ -6,6 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".Profile">
 
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="121dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="44dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtService">
+
+        <Button
+            android:id="@+id/btnEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbg"
+            android:fontFamily="serif-monospace"
+            android:text="Edit Profile"
+            android:textStyle="bold" />
+    </LinearLayout>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
@@ -37,7 +59,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
 
         <RatingBar
             android:id="@+id/ratingBar"
@@ -228,24 +250,24 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 
     <LinearLayout
-        android:id="@+id/linearLayout5"
+        android:id="@+id/linearLayout6"
         android:layout_width="121dp"
         android:layout_height="31dp"
         android:layout_marginTop="5dp"
         android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtService">
 
         <Button
-            android:id="@+id/btnEditProfile"
+            android:id="@+id/btnSendOffer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_weight="1"
             android:background="@drawable/buttonbg"
             android:fontFamily="serif-monospace"
-            android:text="Edit Profile"
+            android:text="Send Offer"
             android:textStyle="bold" />
     </LinearLayout>
 
