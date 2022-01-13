@@ -16,6 +16,7 @@ import android.widget.Toast;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
+//Cansu Yeliz Uluğ
 public class Home extends AppCompatActivity {
     private FirebaseAuth mAuth;
     BottomNavigationView navView;
@@ -42,12 +43,12 @@ public class Home extends AppCompatActivity {
         toast = Toast.makeText(this, "Thanks for joining us!", Toast.LENGTH_SHORT);
         thread = new Thread(new Runnable() {
             @Override
-            public void run() {
+            public void run() {//thread
                 for (int i=0; i<5; i++){
                     try {
-                        Thread.sleep(10000);
+                        Thread.sleep(1000);
                         toast.show();
-                        Thread.sleep(500);
+                        Thread.sleep(10000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -91,7 +92,7 @@ public class Home extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId()==R.id.logout){
-            mAuth.signOut();
+            mAuth.signOut();//For Logout
             Intent intent = new Intent(Home.this, MainActivity.class);
             startActivity(intent);
             finish();

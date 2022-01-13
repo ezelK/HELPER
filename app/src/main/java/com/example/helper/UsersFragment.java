@@ -27,7 +27,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-
+//Ezel Karadirek- Cansu Yeliz Uluğ
 public class UsersFragment extends Fragment {
     private RecyclerView recyclerView;
     private UserAdapter userAdapter;
