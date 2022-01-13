@@ -28,6 +28,7 @@
             android:textStyle="bold" />
     </LinearLayout>
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
@@ -224,14 +225,14 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/image_profile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="115dp"
+        android:layout_height="109dp"
         android:layout_marginTop="156dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@tools:sample/avatars" />
+        tools:src="@mipmap/pp" />
 
     <TextView
         android:id="@+id/txtService"
