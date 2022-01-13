@@ -110,11 +110,11 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        public TextView nameSurname;
-        public TextView service;
-        public TextView phoneNumber;
-        public CircleImageView imageProfile;
-        public Button follow;
+        TextView nameSurname;
+        TextView service;
+        TextView phoneNumber;
+        CircleImageView imageProfile;
+        Button follow;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
