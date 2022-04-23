@@ -25,7 +25,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
-//Ezel Karadirek
+
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
 
     private Context mContext;
