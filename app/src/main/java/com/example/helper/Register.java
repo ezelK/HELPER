@@ -24,7 +24,6 @@ import com.rengwuxian.materialedittext.MaterialEditText;
 
 import java.util.HashMap;
 
-//Ezel Karadirek
 public class Register extends AppCompatActivity {
     MaterialEditText editNameSurname, editEmail, editPassword, editConfirmPassword, editSsn, editPhone, editService;
     Button btnRegister;
