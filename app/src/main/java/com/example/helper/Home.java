@@ -16,7 +16,6 @@ import android.widget.Toast;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
-//Cansu Yeliz Uluğ
 public class Home extends AppCompatActivity {
     private FirebaseAuth mAuth;
     BottomNavigationView navView;
