@@ -18,7 +18,6 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.rengwuxian.materialedittext.MaterialEditText;
 
-//Ezel Karadirek
 public class Login extends AppCompatActivity {
     MaterialEditText email,password;
     Button btnLogin;
